@@ -39,6 +39,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -59,8 +61,15 @@
   <ItemGroup>
     <Content Include="Content\css\bootstrap-theme.css.map" />
     <Content Include="Content\css\bootstrap.css.map" />
-    <Content Include="MyBootstrap.Master" />
+    <Content Include="StartingTemplate.Master" />
     <Content Include="Default.aspx" />
+    <EntityDeploy Include="DataAccess\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DataAccess\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -79,12 +88,17 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyBootstrap.Master.cs">
-      <DependentUpon>MyBootstrap.Master</DependentUpon>
+    <Compile Include="DataAccess\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="StartingTemplate.Master.cs">
+      <DependentUpon>StartingTemplate.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MyBootstrap.Master.designer.cs">
-      <DependentUpon>MyBootstrap.Master</DependentUpon>
+    <Compile Include="StartingTemplate.Master.designer.cs">
+      <DependentUpon>StartingTemplate.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Default.aspx.cs">
