@@ -61,6 +61,10 @@
   <ItemGroup>
     <Content Include="Content\css\bootstrap-theme.css.map" />
     <Content Include="Content\css\bootstrap.css.map" />
+    <Content Include="image\GilbertoSantaRosa.jpg" />
+    <Content Include="image\kvrass.jpg" />
+    <Content Include="image\silvestre.jpg" />
+    <Content Include="image\ZionyLennox.jpg" />
     <Content Include="StartingTemplate.Master" />
     <Content Include="Default.aspx" />
     <EntityDeploy Include="DataAccess\Model1.edmx">
