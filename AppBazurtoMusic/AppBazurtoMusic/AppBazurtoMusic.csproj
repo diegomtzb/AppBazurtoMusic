@@ -61,6 +61,8 @@
   <ItemGroup>
     <Content Include="Content\css\bootstrap-theme.css.map" />
     <Content Include="Content\css\bootstrap.css.map" />
+    <Content Include="Content\css\StyleSheet1.css" />
+    <Content Include="image\cart.png" />
     <Content Include="image\GilbertoSantaRosa.jpg" />
     <Content Include="image\kvrass.jpg" />
     <Content Include="image\silvestre.jpg" />
@@ -92,6 +94,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Cancion.cs" />
+    <Compile Include="Clases\Catalogo.cs" />
+    <Compile Include="Clases\Compra.cs" />
+    <Compile Include="Clases\Disco.cs" />
+    <Compile Include="Clases\Factura.cs" />
+    <Compile Include="Clases\Usuario.cs" />
     <Compile Include="DataAccess\Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

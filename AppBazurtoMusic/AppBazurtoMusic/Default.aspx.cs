@@ -13,5 +13,9 @@ namespace AppBazurtoMusic
         {
 
         }
+
+        protected void Btn_add_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

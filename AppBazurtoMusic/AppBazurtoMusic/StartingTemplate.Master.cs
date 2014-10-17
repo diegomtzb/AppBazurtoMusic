@@ -13,5 +13,10 @@ namespace AppBazurtoMusic
         {
 
         }
+
+        public void add_cart(string song)
+        {
+            cart_number.InnerHtml = song;
+        }
     }
 }
