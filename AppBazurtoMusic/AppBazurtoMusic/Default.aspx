@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/StartingTemplate.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AppBazurtoMusic.WebForm1" %>
+﻿<%@ MasterType virtualpath="~/StartingTemplate.Master" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/StartingTemplate.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AppBazurtoMusic.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -12,8 +13,7 @@
             <img src="image/kvrass.jpg" />
         </figure>
         <h3>Kvrass</h3>
-        <p>Aqui va ve vaina</p>
-        <div><p id="cart_number" runat="server"></p></div>
+        <p id="songName">Aqui va ve vaina</p>
         <asp:Button ID="Btn_add" class="btn btn-default" runat="server" OnClick="Btn_add_Click" Text="Agregar al carrito" />
     </div>
 
@@ -23,7 +23,7 @@
         </figure>
         <h3>Zion y Lenox</h3>
         <p>Como curar</p>
-        <p><a class="btn btn-default" href="#" role="button">Agregar al carrito</a></p>
+        <asp:Button ID="Button1" class="btn btn-default" runat="server" OnClick="Btn_add_Click" Text="Agregar al carrito" />
     </div>
 
     <div class="col-sm-3">
@@ -32,7 +32,7 @@
         </figure>
         <h3>Silvestre Dangond</h3>
         <p>La difunta</p>
-        <p><a class="btn btn-default" href="#" role="button">Agregar al carrito</a></p>
+        <asp:Button ID="Button2" class="btn btn-default" runat="server" OnClick="Btn_add_Click" Text="Agregar al carrito" />
     </div>
 
     <div class="col-sm-3">
@@ -41,7 +41,7 @@
         </figure>
         <h3>Gilberto Santa Rosa</h3>
         <p>Contraste</p>
-        <p><a class="btn btn-default" href="#" role="button">Agregar al carrito</a></p>
+        <asp:Button ID="Button3" class="btn btn-default" runat="server" OnClick="Btn_add_Click" Text="Agregar al carrito" />
     </div>
     </form>
 </asp:Content>

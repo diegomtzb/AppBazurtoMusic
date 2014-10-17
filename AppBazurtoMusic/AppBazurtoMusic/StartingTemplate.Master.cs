@@ -14,9 +14,18 @@ namespace AppBazurtoMusic
 
         }
 
-        public void add_cart(string song)
+        public void add_cart()
         {
-            cart_number.InnerHtml = song;
+            string name = cart_number.InnerHtml.ToString();
+            
+            if (name != ""){
+                int num = Int32.Parse(name);
+                num = num + 1;
+                cart_number.InnerHtml = num.ToString();
+            } else {
+                cart_number.InnerHtml = "1";
+            }
+
         }
     }
 }
